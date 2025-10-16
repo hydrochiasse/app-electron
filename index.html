@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>ceci est une appli calendrier/musique</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+   <h1 class="text-3xl font-bold text-red-600">
+    regroupement de notes
+  </h1>
+  <div id="notes"></div>
+    <div class="items-start absolute bottom-0 left-0">
+        <button type="button" class="bg-indigo-500 rounded-l-lg hover:bg-fuchsia-500 pr-2 pl-2 pb-1 pt-1 " id="btn_ajouter">ajouter</button>
+        
+        <button type="button" class="bg-violet-500 hover:bg-violet-600 pr-2 pl-2 pb-1 pt-1" id="btn_ajouter_cat">ajouter catégorie</button>
+        <button type="button" class="bg-indigo-500 hover:bg-fuchsia-500 pr-2 pl-2 pt-1 pb-1" id="btn_modifier">modifier</button>
+        <button type="button" class="bg-red-500/100 hover:bg-red-500/50 rounded-r-lg
+        pr-2 pl-2 pt-1 pb-1" id="btn_supprimer">supprimer</button>
+    </div>
+    <dialog id="boite_dialog" class="place-content-center">
+    <form method="dialog" ></form>
+        <p>
+      <label>
+        categorie de note :
+        <select>
+          <option>Choisissez…</option>
+          <option>travail</option>
+          <option>rendez-vous</option>
+          <option>santé</option>
+        </select>
+      </label>
+    </p>
+    <!--<p>
+      <label>
+        note :
+        <textarea placeholder="note a ecrire"></textarea>
+      </label>
+    </p>-->
+    <menu>
+      <button id="confirmBtn" value="default" class="bg-indigo-500 rounded-l-lg hover:bg-fuchsia-500 pr-2 pl-2 pb-1 pt-1 ">Confirmer</button>
+      <button id="cancelBtn" value="cancel" class="bg-red-500/100 hover:bg-red-500/50 rounded-r-lg
+        pr-2 pl-2 pt-1 pb-1">Annuler</button>
+    </menu>
+    <output></output> 
+
+    </dialog>
+
+  </body>
+</html>

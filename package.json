@@ -1,0 +1,22 @@
+{
+  "name": "app_electron",
+  "version": "1.0.0",
+  "description": "app electron perso",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch:css": "npx @tailwindcss/cli -i ./style.css -o ./output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^38.2.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "gridjs": "^6.2.0",
+    "tailwindcss": "^4.1.14"
+  }
+}

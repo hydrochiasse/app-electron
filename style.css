@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+::backdrop {
+    background-image: linear-gradient(
+    45deg,
+    rgb(0, 0, 255),
+    rgb(99, 99, 252),
+    rgb(182, 182, 255),
+  ) ;
+}
